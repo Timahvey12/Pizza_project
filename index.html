@@ -28,14 +28,91 @@
         </div>
       </div>
       <div class="footer">
-        <div class="menu_list">
-          <div class="main_base"></div>
-          <div class="main_meat"></div>
-          <div class="main_vegitables"></div>
-          <div class="main_souce"></div>
-        </div>
+        <form id="test" class="menu_list">
+          <div class="column main_base">
+            <input
+              type="radio"
+              id="main_base1"
+              name="main_base"
+              value="garlik"
+            />
+            <label for="main_base1">Чесночная основа $: 5</label>
+            <input
+              type="radio"
+              id="main_base2"
+              name="main_base"
+              value="tomato"
+            />
+            <label for="main_base2">Томатная основа $: 4</label>
+            <input
+              type="radio"
+              id="main_base3"
+              name="main_base"
+              value="cheese"
+            />
+            <label for="main_base3">Сырная основа $: 7</label>
+            <input
+              type="radio"
+              id="main_base4"
+              name="main_base"
+              value="barbeq"
+            />
+            <label for="main_base4">Основа барбекю $: 6</label>
+          </div>
+
+          <div class="column main_meat">
+            <input type="checkbox" id="meat1" name="meat" value="becon" />
+            <label for="meat1">Бекон $: 7</label>
+            <input type="checkbox" id="meat2" name="meat" value="saliami" />
+            <label for="meat2">Салями $: 4</label>
+            <input type="checkbox" id="meat3" name="meat" value="chiken" />
+            <label for="meat3">Курица $: 3</label>
+            <input type="checkbox" id="meat4" name="meat" value="proshuto" />
+            <label for="meat4">Ветчина $: 6</label>
+          </div>
+          <div class="column main_vegitables">
+            <input
+              type="checkbox"
+              id="vegetables1"
+              name="vegetables"
+              value="repchat"
+            />
+            <label for="vegetables1">Лук $: 5</label>
+            <input
+              type="checkbox"
+              id="vegetables2"
+              name="vegetables"
+              value="shampinion"
+            />
+            <label for="vegetables2">Шампиньоны $: 9</label>
+            <input
+              type="checkbox"
+              id="vegetables3"
+              name="vegetables"
+              value="ogurec"
+            />
+            <label for="vegetables3">Огурцы $: 3</label>
+            <input
+              type="checkbox"
+              id="vegetables4"
+              name="vegetables"
+              value="ananas"
+            />
+            <label for="vegetables4">Ананас $: 6</label>
+          </div>
+          <div class="column main_souce">
+            <input type="radio" id="sauce1" name="sauce" value="tomato" />
+            <label for="sauce1">Томатный соус $: 4</label>
+            <input type="radio" id="sauce2" name="sauce" value="barbeq" />
+            <label for="sauce2">Соус барбекю $: 4</label>
+            <input type="radio" id="sauce3" name="sauce" value="cheese" />
+            <label for="sauce3">Сырный соус $: 5</label>
+            <input type="radio" id="sauce4" name="sauce" value="carri" />
+            <label for="sauce4">Соус карри $: 6</label>
+          </div>
+        </form>
       </div>
     </div>
-    <script src="./index.js"></script>
+    <script type="module" src="./index.js"></script>
   </body>
 </html>

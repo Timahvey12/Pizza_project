@@ -18,7 +18,7 @@ body {
   align-items: center;
   border: 2px solid red;
   width: 100%;
-  max-width: 900px;
+  max-width: 700px;
   background-color: #fff;
   margin: 20px;
   padding: 20px;
@@ -52,61 +52,90 @@ body {
 }
 .img_order {
   display: flex;
-  align-items: centr;
+  align-items: center;
   justify-content: center;
   height: 100%;
   width: 100%;
 }
 .img {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: unset;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   background-image: url(./img/pizza.jpg);
-  justify-content: center;
-  width: 250px;
+  width: 390px;
   height: 250px;
 }
+label {
+  margin: 5px;
+  bottom: 5px;
+}
+
 .hiden1 {
   width: 50%;
   height: 50%;
-  border: 3px solid red;
-  background-color: rgba(15, 13, 13, 0.658);
+  background-color: rgba(213, 154, 154, 0.464);
 }
 .hiden2 {
   width: 50%;
   height: 50%;
-  border: 3px solid red;
-  background-color: rgba(15, 13, 13, 0.658);
+  background-color: rgba(213, 154, 154, 0.464);
 }
 .hiden3 {
   width: 50%;
   height: 50%;
-  border: 3px solid red;
-  background-color: rgba(15, 13, 13, 0.658);
+  background-color: rgba(213, 154, 154, 0.464);
 }
 .hiden4 {
   width: 50%;
   height: 50%;
-  border: 3px solid red;
-  background-color: rgba(15, 13, 13, 0.658);
+
+  background-color: rgba(213, 154, 154, 0.464);
 }
+
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   margin: 20px;
   padding: 20px;
-  border: 5px solid green;
+  border: 5px solid rgb(215, 237, 215);
 }
 .menu_list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 20%;
+  width: 100%;
+}
+.column {
+  border: 3px solid rgba(230, 209, 209, 0.418);
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .main_base {
+  align-items: center;
+  margin: 20px;
+  font-size: 15px;
 }
 .main_meat {
+  align-items: center;
+  margin: 20px;
+  font-size: 15px;
 }
 .main_vegitables {
+  align-items: center;
+  margin: 20px;
+  font-size: 15px;
 }
 .main_souce {
+  align-items: center;
+  margin: 20px;
+  font-size: 15px;
 }
