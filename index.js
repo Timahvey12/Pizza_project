@@ -5,14 +5,28 @@ test.addEventListener("change", ({ target }) => {
   // console.log(target.checked);
   if (target.name === "main_base" || target.name === "sauce") {
     orderState[target.name][0] = ingr[target.name][target.value];
+<<<<<<< HEAD
     // document.getElementById("hiden2").style.backgroundColor =
     //   "rgba(0, 0, 0, 0)";
+=======
+
+    // function eddTagIngr() {
+    //   const order_abaut = document.querySelector("order_abaut");
+    //   console.log(order_abaut);
+    //   const newDiv = order_abaut.innerHTML;
+    //   newDiv.innerHTML = `<p>${orderState[target.name][0]}</p>`;
+    //   return newDiv;
+    // }
+>>>>>>> f2fdbc0bb9ec2541561008201e72bddc3244e49f
   } else {
     if (target.checked) {
       if (orderState[target.name].length < 2) {
         orderState[target.name].push(ingr[target.name][target.value]);
+<<<<<<< HEAD
         // document.getElementById("hiden1").style.backgroundColor =
         //   "rgba(0, 0, 0, 0)";
+=======
+>>>>>>> f2fdbc0bb9ec2541561008201e72bddc3244e49f
       } else {
         target.checked = false;
       }
@@ -23,6 +37,7 @@ test.addEventListener("change", ({ target }) => {
       orderState[target.name].splice(idx, 1);
     }
   }
+<<<<<<< HEAD
 
   // console.log(orderState[target.value].price);
   addRemoveElemMain();
@@ -30,6 +45,9 @@ test.addEventListener("change", ({ target }) => {
   addRemoveElemSauce();
   addRemoveElemVegit();
   orderPrice();
+=======
+  console.log(orderState[target.name]);
+>>>>>>> f2fdbc0bb9ec2541561008201e72bddc3244e49f
 });
 function addRemoveElemMain() {
   const ingrPmain = document.querySelector(".ingr-main_base");
