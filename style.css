@@ -32,14 +32,25 @@ body {
   height: auto;
 }
 .order {
+  border-left: 5px;
+  padding-left: 5px;
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-.order_abaut {
+
+.order_about p {
+  border: 1px solid red;
+  font-size: 12px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.order_about {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
   height: 50%;
 }
@@ -60,7 +71,7 @@ body {
 .img {
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: unset;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -73,26 +84,27 @@ label {
   bottom: 5px;
 }
 
-.hiden1 {
+#hiden1 {
   width: 50%;
   height: 50%;
-  background-color: rgba(213, 154, 154, 0.464);
+  background-color: rgba(212, 42, 42, 0.801);
 }
-.hiden2 {
-  width: 50%;
-  height: 50%;
-  background-color: rgba(213, 154, 154, 0.464);
-}
-.hiden3 {
-  width: 50%;
-  height: 50%;
-  background-color: rgba(213, 154, 154, 0.464);
-}
-.hiden4 {
+#hiden2 {
   width: 50%;
   height: 50%;
 
-  background-color: rgba(213, 154, 154, 0.464);
+  background-color: rgba(212, 42, 42, 0.801);
+}
+#hiden3 {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(212, 42, 42, 0.801);
+}
+#hiden4 {
+  width: 50%;
+  height: 50%;
+  /* background-color: rgba(218, 205, 205, 0); */
+  background-color: rgba(212, 42, 42, 0.801);
 }
 
 .footer {
