@@ -1,8 +1,7 @@
 import { ingr, orderState } from "./constans.js";
-
+import { createButton } from "./addElements.js";
 const test = document.getElementById("test");
 test.addEventListener("change", ({ target }) => {
-  // console.log(target.checked);
   if (target.name === "main_base" || target.name === "sauce") {
     orderState[target.name][0] = ingr[target.name][target.value];
   } else {
@@ -24,8 +23,11 @@ test.addEventListener("change", ({ target }) => {
   addRemoveElemMeat();
   addRemoveElemSauce();
   addRemoveElemVegit();
-
+  hiddenDivs();
+  hiddenSouce();
+  hiddenMeatVegitablesIngr();
   orderPriceCounter();
+  console.log(orderState.main_base.length);
 });
 
 function addRemoveElemMain() {
@@ -63,6 +65,43 @@ function orderPriceCounter() {
   orderState.main_base.forEach((element) => {
     fullPrice += element.price;
   });
-
+  const orderPrise = document.querySelector(".countPrice");
+  orderPrise.textContent = fullPrice;
   console.log(fullPrice);
 }
+
+function hiddenDivs() {
+  if (orderState.main_base[0]) {
+    // document.querySelector(".hiden1").classList.toggle("hiden1");
+    const fsdf = document.querySelector(".hiden1");
+    fsdf.style.backgroundColor = "rgba(253, 253, 253, 0)";
+  }
+}
+function hiddenSouce() {
+  if (orderState.sauce[0]) {
+    const souce = document.querySelector(".hiden4");
+    souce.style.backgroundColor = "rgba(253, 253, 253, 0)";
+  }
+}
+
+function hiddenMeatVegitablesIngr() {
+  if (orderState.meat.length > 1) {
+    document.querySelector(".hiden2").style.backgroundColor =
+      "rgba(253, 253, 253, 0)";
+  } else if (orderState.meat.length <= 1) {
+    document.querySelector(".hiden2").style.backgroundColor =
+      "rgba(212, 42, 42, 0.801)";
+  }
+  if (orderState.vegetables.length > 1) {
+    document.querySelector(".hiden3").style.backgroundColor =
+      "rgba(253, 253, 253, 0)";
+  } else if (orderState.vegetables.length <= 1) {
+    document.querySelector(".hiden3").style.backgroundColor =
+      "rgba(212, 42, 42, 0.801)";
+  }
+}
+createButton();
+// function getPopup (){
+//   if(orderState.)
+
+// }
