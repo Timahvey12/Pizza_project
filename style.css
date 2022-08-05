@@ -87,24 +87,28 @@ label {
   margin: 5px;
   bottom: 5px;
 }
+.hiden0 {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(253, 253, 253, 0);
+}
+.hiden1 {
+  width: 50%;
+  height: 50%;
+  background-color: rgba(212, 42, 42, 0.801);
+}
+.hiden2 {
+  width: 50%;
+  height: 50%;
 
-#hiden1 {
+  background-color: rgba(212, 42, 42, 0.801);
+}
+.hiden3 {
   width: 50%;
   height: 50%;
   background-color: rgba(212, 42, 42, 0.801);
 }
-#hiden2 {
-  width: 50%;
-  height: 50%;
-
-  background-color: rgba(212, 42, 42, 0.801);
-}
-#hiden3 {
-  width: 50%;
-  height: 50%;
-  background-color: rgba(212, 42, 42, 0.801);
-}
-#hiden4 {
+.hiden4 {
   width: 50%;
   height: 50%;
   /* background-color: rgba(218, 205, 205, 0); */
