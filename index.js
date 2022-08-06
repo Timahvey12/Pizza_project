@@ -27,7 +27,6 @@ test.addEventListener("change", ({ target }) => {
   hiddenSouce();
   hiddenMeatVegitablesIngr();
   orderPriceCounter();
-  console.log(orderState.main_base.length);
 });
 
 function addRemoveElemMain() {
@@ -67,7 +66,6 @@ export function orderPriceCounter() {
   });
   const orderPrise = document.querySelector(".countPrice");
   return (orderPrise.textContent = fullPrice + `$`);
-  // console.log(fullPrice);
 }
 
 function hiddenDivs() {
@@ -100,7 +98,3 @@ function hiddenMeatVegitablesIngr() {
   }
 }
 createButton();
-// function getPopup (){
-//   if(orderState.)
-
-// }
