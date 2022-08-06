@@ -51,7 +51,7 @@ function addRemoveElemSauce() {
   ingrPSouce.textContent = orderState.sauce[0]?.name;
 }
 
-function orderPriceCounter() {
+export function orderPriceCounter() {
   let fullPrice = 0;
   orderState.vegetables.forEach((element) => {
     fullPrice += element.price;
@@ -66,13 +66,12 @@ function orderPriceCounter() {
     fullPrice += element.price;
   });
   const orderPrise = document.querySelector(".countPrice");
-  orderPrise.textContent = fullPrice;
-  console.log(fullPrice);
+  return (orderPrise.textContent = fullPrice + `$`);
+  // console.log(fullPrice);
 }
 
 function hiddenDivs() {
   if (orderState.main_base[0]) {
-    // document.querySelector(".hiden1").classList.toggle("hiden1");
     const fsdf = document.querySelector(".hiden1");
     fsdf.style.backgroundColor = "rgba(253, 253, 253, 0)";
   }
